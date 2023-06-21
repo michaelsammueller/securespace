@@ -17,7 +17,7 @@ class Input_Sanitisation_Service:
 
     def filter_special_characters(self, user_input):
         """Filters special characters from user input"""
-        sanitized_input = re.sub(r'[^\w\s]', '', user_input)
+        sanitized_input = re.sub(r'[^\w\s]', '', user_input) # Replace special characters with empty string
         return sanitized_input
 
     
